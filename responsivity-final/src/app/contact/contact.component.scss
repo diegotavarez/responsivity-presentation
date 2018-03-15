@@ -1,0 +1,34 @@
+footer {
+  width: 100%;
+  padding: 3%;
+  color: white;
+  background-color: black;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 25px;
+  color: white;
+}
+
+.fa:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+.h2 {
+  position: relative;
+  padding: 15px;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-image: url("assets/images/paper.jpg");
+  letter-spacing: 2px;
+  font-weight: 300;
+  color: white;
+  max-width: 75%;
+  width: max-content;
+  text-shadow: none;
+  font-size: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+}
