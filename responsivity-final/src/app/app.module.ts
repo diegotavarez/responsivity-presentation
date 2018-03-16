@@ -10,7 +10,11 @@ import { PricingComponent } from './pricing/pricing.component';
 import { ContactComponent } from './contact/contact.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import {FlexLayoutModule} from "@angular/flex-layout";
+//Material design module
+import { MaterialModule } from './material.module';
+
+import {PlanService} from './plan.service';
 
 @NgModule({
   declarations: [
@@ -23,9 +27,11 @@ import {MatButtonModule, MatCheckboxModule} from '@angular/material';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule,
+    FlexLayoutModule
   ],
-  providers: [],
+  providers: [PlanService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

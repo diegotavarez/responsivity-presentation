@@ -17,3 +17,11 @@
   -webkit-transform: rotate(2deg); /* Safari */
   transform: rotate(2deg);
 }
+
+.btn {
+  color: #fafafa;
+}
+
+.btn:hover {
+text-decoration: line-through;
+}

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+//Material design module
+import { MaterialModule } from './material.module';
 
 @Component({
   selector: 'app-root',

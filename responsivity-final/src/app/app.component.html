@@ -1,3 +1,36 @@
+<mat-toolbar color="primary">
+
+    <button mat-button routerLink="/">
+    <mat-icon>home</mat-icon>
+        {{title}}</button>
+
+    <!-- This fills the remaining space of the current row -->
+    <span class="fill-remaining-space"></span>
+    <div fxLayout="row" fxShow="false" fxShow.gt-sm>
+      <ul class="nav navbar-nav navbar-right text-uppercase ml-auto">
+        <li class="nav-item active js-scroll-trigger"> <a href="#page-top">Home</a> </li>
+        <li class="nav-item js-scroll-trigger"> <a href="#page-about">About</a> </li>
+        <li class="nav-item js-scroll-trigger"> <a href="#page-news">Browse</a> </li>
+        <li class="nav-item js-scroll-trigger"> <a href="#page-pricing">Pricing</a> </li>
+        <li class="nav-item js-scroll-trigger"> <a href="#page-contact">Contact</a> </li>
+      </ul>
+    </div>
+    <button mat-button [mat-menu-trigger-for]="menu" fxHide="false" fxHide.gt-sm>
+     <mat-icon>menu</mat-icon>
+    </button>
+
+</mat-toolbar>
+<mat-menu x-position="before" #menu="matMenu">
+  <ul class="nav navbar-nav navbar-right text-uppercase ml-auto">
+    <li class="nav-item active js-scroll-trigger"> <a href="#page-top">Home</a> </li>
+    <li class="nav-item js-scroll-trigger"> <a href="#page-about">About</a> </li>
+    <li class="nav-item js-scroll-trigger"> <a href="#page-news">Browse</a> </li>
+    <li class="nav-item js-scroll-trigger"> <a href="#page-pricing">Pricing</a> </li>
+    <li class="nav-item js-scroll-trigger"> <a href="#page-contact">Contact</a> </li>
+  </ul>
+    <!--<button mat-menu-item>Help</button>-->
+</mat-menu>
+
 <nav class="navbar navbar-inverse navbar-expand-lg navbar-dark fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
