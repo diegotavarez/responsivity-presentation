@@ -1,11 +1,14 @@
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.9);
   color: #ffffff;
-  padding: 1% 0;
+  padding: 5px 0 5px 0;
   font-size: 1.2em;
   border: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
 }
 
 .navbar-brand {
@@ -18,8 +21,12 @@
 .navbar-inverse .navbar-nav .active a:focus,
 .navbar-inverse .navbar-nav .active a:hover{
   color: black;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 1);
   text-decoration: line-through;
+  font-weight: 600;
+  -ms-transform: rotate(-2deg); /* IE 9 */
+  -webkit-transform: rotate(-2deg); /* Safari */
+  transform: rotate(-2deg);
 }
 
 .navbar-inverse .navbar-nav li a {
