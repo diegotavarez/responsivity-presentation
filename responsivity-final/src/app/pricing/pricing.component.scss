@@ -20,8 +20,20 @@
 
 .btn {
   color: #fafafa;
+  max-width: 100%;
+  width: 100%;
+  padding: 0;
 }
 
 .btn:hover {
 text-decoration: line-through;
+}
+
+.container {
+  padding-top: 4%;
+}
+
+mat-table {
+    overflow-y: auto;
+    height: 450px;
 }
