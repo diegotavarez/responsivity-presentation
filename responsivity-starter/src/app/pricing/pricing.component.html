@@ -1,0 +1,90 @@
+<div class="container text-container">
+  <h2 class="h2">Plans and Pricing</h2>
+  <br>
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img src="assets/images/freeplan.png" class="img-responsive" id="icon" alt="">
+      <div class="example-container mat-elevation-z8">
+        <mat-table #table [dataSource]="freePlanFeatures">
+
+          <!-- Name Column -->
+          <ng-container matColumnDef="date">
+            <mat-header-cell *matHeaderCellDef> Features </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.feature}} </mat-cell>
+          </ng-container>
+
+          <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+        </mat-table>
+      </div>
+      <br>
+      <a href="#page-about" class="waves-effect waves-light btn green accent-4">Choose Free</a>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img src="assets/images/premiumplan.png" class="img-responsive" id="icon" alt="">
+      <div class="example-container mat-elevation-z8">
+        <mat-table #table [dataSource]="premiumPlanFeatures">
+
+                    <!-- Name Column -->
+                    <ng-container matColumnDef="date">
+                      <mat-header-cell *matHeaderCellDef> Features </mat-header-cell>
+                      <mat-cell *matCellDef="let element"> {{element.feature}} </mat-cell>
+                    </ng-container>
+
+                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+        </mat-table>
+      </div>
+      <br>
+      <a href="#page-about" class="waves-effect waves-light btn amber accent-4">Choose Premium</a>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img src="assets/images/studentplan.png" class="img-responsive" id="icon" alt="">
+      <div class="example-container mat-elevation-z8">
+        <mat-table #table [dataSource]="studentPlanFeatures">
+
+                    <!-- Name Column -->
+                    <ng-container matColumnDef="date">
+                      <mat-header-cell *matHeaderCellDef> Features </mat-header-cell>
+                      <mat-cell *matCellDef="let element"> {{element.feature}} </mat-cell>
+                    </ng-container>
+
+                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+        </mat-table>
+      </div>
+      <br>
+      <a href="#page-about" class="waves-effect waves-light btn cyan accent-4">Choose Student</a>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img src="assets/images/familyplan.png" class="img-responsive" id="icon" alt="">
+      <div class="example-container mat-elevation-z8">
+        <mat-table #table [dataSource]="familyPlanFeatures">
+
+                    <!-- Name Column -->
+                    <ng-container matColumnDef="date">
+                      <mat-header-cell *matHeaderCellDef> Features </mat-header-cell>
+                      <mat-cell *matCellDef="let element"> {{element.feature}} </mat-cell>
+                    </ng-container>
+
+                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+        </mat-table>
+      </div>
+      <br>
+      <a href="#page-about" class="waves-effect waves-light btn pink accent-4">Choose Family</a>
+    </div>
+
+</div>
+
+<div class="container text-container">
+  <div class="row">
+    <h4> <a href="#hidden" data-toggle="collapse">See who´s using My Jams</a> </h4>
+    <div id="hidden" class="collapse">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+  </div>
+</div>

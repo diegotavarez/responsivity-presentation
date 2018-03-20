@@ -1,0 +1,34 @@
+.navbar {
+  background-color: rgba(255, 255, 255, 0.92);
+  color: black;
+  position: fixed;
+  z-index: 3;
+}
+
+.navbar-brand {
+  float: left;
+  min-height: 55px;
+  padding: 0 15px 15px;
+}
+
+a {
+  color: #4A4A4A;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.active a,
+a:focus,
+a:hover{
+  text-decoration: line-through;
+  font-weight: 600;
+  color: black;
+}
+
+.nav-item {
+  letter-spacing: 3px;;
+}
+
+.navbar-toggle {
+  background-color: rgba(255, 255, 255, 0);
+}
